@@ -1,0 +1,81 @@
+// **********************************************
+// Nav styles
+// **********************************************
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 20px 0px;
+  background-color: $primary;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+// Logo
+
+.logoContainer {
+  width: 50px;
+}
+
+// Nav links
+
+.navLinks {
+  flex-grow: 10;
+  width: 50%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+}
+
+.navLink {
+  padding: 10px 15px;
+}
+
+// **********************************************
+// Landing styles
+// **********************************************
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingChild {
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+
+.landingTextContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+// Landing text
+
+h1 {
+  font-size: calc(2rem + 2vw);
+  color: $darkGrey;
+  margin-bottom: 20px;
+}
+
+.characteristic {
+  display: block;
+}
+
+h4 {
+  font-size: calc(1rem + 0.25vw);
+  color: $darkBlue;
+}
+
+.selfPortrait {
+  max-height: 80vh;
+  border-radius: 30px;
+}

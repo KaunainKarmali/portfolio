@@ -1,0 +1,58 @@
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  background-color: $primary;
+  color: $darkGrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $darkGrey;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+header,
+section {
+  padding: 100px 0px;
+}
+
+// Website wrapper
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Dev icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+    />
+
+    <!-- Font awesome icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Kaunain Karmali</title>
+  </head>
+  <body>
+    <!-- TODO: Skip to main link -->
+
+    <!-- Header -->
+    <header id="home">
+      <div class="wrapper">
+        <!-- Nav -->
+        <nav>
+          <div class="wrapper navBar">
+            <!-- Logo -->
+            <div class="logoContainer">
+              <a href="#home">
+                <img
+                  class="logo"
+                  src="./assets/logo.png"
+                  alt="Kaunain Karmali logo"
+                />
+              </a>
+            </div>
+
+            <!-- Nav options -->
+            <ul class="navLinks">
+              <li><a class="navLink" href="#home">Home</a></li>
+              <li><a class="navLink" href="#about">About</a></li>
+              <li><a class="navLink" href="#skills">Skills</a></li>
+              <li><a class="navLink" href="#projects">Projects</a></li>
+              <li><a class="navLink" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Landing page -->
+        <div class="landing">
+          <!-- Landing text -->
+          <div class="landingChild landingTextContainer">
+            <h1>
+              Hi, I'm
+              <span class="name">Kaunain.</span>
+              <span class="characteristic">A Developer.</span>
+            </h1>
+            <h4>
+              I’m also a Chartered Accountant and an avid basketball fan with a
+              passion for bringing ideas to life, using code.
+            </h4>
+          </div>
+
+          <!-- Landing image -->
+          <div class="landingChild landingImgContainer">
+            <img
+              class="selfPortrait landingImg"
+              src="./assets/headerImg.jpg"
+              alt="Photo of Kaunain Karmali"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="wrapper">
+        <!-- About section -->
+        <section id="about">
+          <div class="aboutContainer">
+            <!-- About image container -->
+            <div class="aboutImgContainer">
+              <!-- TODO: Add image -->
+              <img
+                class="selfPortrait aboutImg"
+                src="./assets/about.jpeg"
+                alt="Photo of Kaunain Karmali standing on a bridge"
+              />
+            </div>
+
+            <!-- About text container -->
+            <div class="aboutTextContainer">
+              <h2 class="sectionTitle">A little about me</h2>
+
+              <p class="aboutText">
+                I'm a Chartered Accountant turned Front-end Developer based in
+                Toronto, Canada. As a Developer, I enjoy creating purposeful,
+                accessible, and beautiful apps that place the user at the heart
+                of development decisions.
+              </p>
+              <p class="aboutText">
+                I've spent over 5 years in client service roles, leading teams
+                to help clients tackle their most challenging business problems.
+                These range from researching technical accounting guidance to
+                re-imagining how departments function.
+              </p>
+              <p class="aboutText">
+                In my free time, I am an avid Raptors fan, enjoy reading, and
+                staying active!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TODO: Decide whether to add a currently reading section -->
+
+        <!-- Skills section -->
+        <section id="skills">
+          <h2 class="sectionTitle">Skills</h2>
+
+          <!-- Skills container -->
+          <ul class="skillsContainer">
+            <!-- TODO: add logo images to the image tags below -->
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-html5-plain colored skillIcon"></i>
+                <h3 class="skillText">HTML</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-css3-plain colored skillIcon"></i>
+                <h3 class="skillText">CSS</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-javascript-plain colored skillIcon"></i>
+                <h3 class="skillText">JavaScript</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-react-original colored skillIcon"></i>
+                <h3 class="skillText">React</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-sass-original colored skillIcon"></i>
+                <h3 class="skillText">SASS/SCSS</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-jquery-plain colored skillIcon"></i>
+                <h3 class="skillText">jQuery</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-nodejs-plain colored skillIcon"></i>
+                <h3 class="skillText">Node</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-firebase-plain colored skillIcon"></i>
+                <h3 class="skillText">Firebase</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-express-original colored skillIcon"></i>
+                <h3 class="skillText">Express</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-mongodb-plain colored skillIcon"></i>
+                <h3 class="skillText">MongoDB</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="devicon-python-plain colored skillIcon"></i>
+                <h3 class="skillText">Python</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="fas fa-cogs skillIcon"></i>
+                <h3 class="skillText">Rest API</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div>
+                <i class="fas fa-universal-access skillIcon"></i>
+                <h3 class="skillText">Accessibility</h3>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+          <h2 class="sectionTitle">Projects</h2>
+
+          <!-- Projects container -->
+          <ul class="projectsContainer">
+            <!-- Plan-it project -->
+            <li class="projectOuterContainer">
+              <a>
+                <div class="projectContainer">
+                  <div class="projectImg">
+                    <!-- TODO: -->
+                    <img src="" alt="" />
+                  </div>
+                  <div class="projectText"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+          <h2 class="sectionTitle">Contact</h2>
+
+          <div class="contactContainer">
+            <!-- Contact links -->
+            <div class="contactLinksContainer">
+              <ul>
+                <li>
+                  <a href="linkedIn"></a>
+                  <p>LinkedIn</p>
+                </li>
+                <li>
+                  <a href="twitter"></a>
+                  <p>Twitter</p>
+                </li>
+                <li>
+                  <a href="email"></a>
+                  <p>kaunaink@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact form -->
+
+            <!-- TODO: Build error handling into this -->
+            <div>
+              <!-- TODO: Setup the form to auto email to my inbox -->
+              <form action="/">
+                <!-- Name input -->
+                <input type="text" id="name" class="contactInput" />
+                <label for="name" class="contactLabel">Name</label>
+
+                <!-- Email input -->
+                <input type="text" id="email" class="contactInput" />
+                <label for="email" class="contactLabel">Email</label>
+
+                <!-- Message input -->
+                <textarea
+                  type="text"
+                  id="message"
+                  class="contactInput"
+                ></textarea>
+                <label for="message" class="contactLabel">Message</label>
+
+                <button type="submit" class="contactSubmitBtn">
+                  Let's talk
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footerText">Created by Kaunain Karmali</p>
+    </footer>
+  </body>
+</html>
