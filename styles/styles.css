@@ -458,18 +458,300 @@ h3 {
 }
 
 .skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillIconContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
+}
+
+.skillText {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .skillIcon {
   font-size: 5rem;
-  padding: 30px;
+}
+.skillIcon::before {
+  padding: 0px;
+}
+
+.restApi {
+  color: #272343;
+}
+
+.accessibility {
+  color: #b97a95;
+}
+
+.projectOuterContainer {
+  margin-bottom: 60px;
+}
+
+.projectContainer {
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.planItContainer {
+  background: #1eae98;
+  background: linear-gradient(141deg, #1eae98 0%, #6d967f 70%, #ee6f57 100%);
+  color: white;
+}
+
+.showMakContainer {
+  background: #0b0c10;
+  background: linear-gradient(141deg, #0b0c10 0%, #45a29e 100%);
+  color: white;
+}
+
+.nbaCodeStarsContainer {
+  background: #283149;
+  background: linear-gradient(141deg, #283149 0%, #f73859 100%);
+  color: white;
+}
+
+.gameContainer {
+  background: #fc5185;
+  background: linear-gradient(141deg, #fc5185 0%, #072740 100%);
+  color: white;
+}
+
+.projectInnerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectTitle {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: calc(2rem + 0.5vw);
+}
+
+.projectImg {
+  border-radius: 10px;
+}
+
+.projectContentContainer {
+  margin-left: 30px;
+  min-width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.techStackIcon {
+  font-size: 2rem;
+}
+
+.techStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.techStack .skillIconContainer {
+  padding: 10px 30px;
+}
+.techStack:first-child .skillIconContainer {
+  padding-left: 0px;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus, .btn:focus-visible, .btn:active {
+  -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.primaryBtn {
+  color: #2d3747;
+  background-color: #98c1d9;
+  border-color: #98c1d9;
+}
+.primaryBtn:hover, .primaryBtn:focus, .primaryBtn:focus-visible, .primaryBtn:active {
+  color: white;
+  background-color: #3d5a80;
+  border-color: #3d5a80;
+}
+
+.secondaryBtn {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+}
+.secondaryBtn:hover, .secondaryBtn:focus, .secondaryBtn:active {
+  color: #2d3747;
+  background-color: rgba(152, 193, 217, 0.3);
+  border-color: rgba(152, 193, 217, 0.3);
+}
+
+.githubBtn {
+  margin-left: 10px;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactLinksContainer,
+.contactFormContainer {
+  width: 50%;
+}
+
+.contactIconContainer p {
+  font-size: 1rem;
+}
+
+.cta {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.contactImgContainer {
+  width: 40%;
+  margin-right: 10px;
+}
+.contactImgContainer img {
+  border-radius: 5px;
+}
+
+.contactIconsWrapper {
+  margin-bottom: 30px;
+}
+
+.contactIcon {
+  font-size: 2rem;
+  width: 30px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.smallIcon {
+  font-size: 1.3rem;
+}
+
+.contactIconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.contactLinksWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.contactInput {
+  background-color: #3d5a80;
+  color: white;
+  border: 1px solid #2d3747;
+  padding: 13px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contactInput::-webkit-input-placeholder {
+  color: white;
+}
+.contactInput::-moz-placeholder {
+  color: white;
+}
+.contactInput:-ms-input-placeholder {
+  color: white;
+}
+.contactInput::-ms-input-placeholder {
+  color: white;
+}
+.contactInput::placeholder {
+  color: white;
+}
+.contactInput:hover {
+  border-width: 2px;
+  padding: calc(13px - 1px);
+  border-color: #ee6c4d;
+}
+.contactInput:focus, .contactInput:active {
+  outline: 0;
+  border-width: 2px;
+  padding: calc(13px - 1px);
+  border-color: #ee6c4d;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
 }

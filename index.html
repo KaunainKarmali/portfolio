@@ -140,81 +140,99 @@
           <ul class="skillsContainer">
             <!-- TODO: add logo images to the image tags below -->
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-html5-plain colored skillIcon"></i>
                 <h3 class="skillText">HTML</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-css3-plain colored skillIcon"></i>
                 <h3 class="skillText">CSS</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-javascript-plain colored skillIcon"></i>
                 <h3 class="skillText">JavaScript</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-react-original colored skillIcon"></i>
                 <h3 class="skillText">React</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-sass-original colored skillIcon"></i>
                 <h3 class="skillText">SASS/SCSS</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-jquery-plain colored skillIcon"></i>
                 <h3 class="skillText">jQuery</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
-                <i class="devicon-nodejs-plain colored skillIcon"></i>
-                <h3 class="skillText">Node</h3>
-              </div>
-            </li>
-            <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-firebase-plain colored skillIcon"></i>
                 <h3 class="skillText">Firebase</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
+                <i class="devicon-nodejs-plain colored skillIcon"></i>
+                <h3 class="skillText">Node</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div class="skillIconContainer">
                 <i class="devicon-express-original colored skillIcon"></i>
                 <h3 class="skillText">Express</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-mongodb-plain colored skillIcon"></i>
                 <h3 class="skillText">MongoDB</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
+              <div class="skillIconContainer">
                 <i class="devicon-python-plain colored skillIcon"></i>
                 <h3 class="skillText">Python</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
-                <i class="fas fa-cogs skillIcon"></i>
+              <div class="skillIconContainer">
+                <i class="devicon-jupyter-plain colored skillIcon"></i>
+                <h3 class="skillText">Jupyter</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div class="skillIconContainer">
+                <i class="fas fa-cogs skillIcon restApi"></i>
                 <h3 class="skillText">Rest API</h3>
               </div>
             </li>
             <li class="skillContainer">
-              <div>
-                <i class="fas fa-universal-access skillIcon"></i>
+              <div class="skillIconContainer">
+                <i class="fas fa-universal-access skillIcon accessibility"></i>
                 <h3 class="skillText">Accessibility</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div class="skillIconContainer">
+                <i class="devicon-git-plain colored skillIcon"></i>
+                <h3 class="skillText">Git</h3>
+              </div>
+            </li>
+            <li class="skillContainer">
+              <div class="skillIconContainer">
+                <i class="devicon-github-original colored skillIcon"></i>
+                <h3 class="skillText">Github</h3>
               </div>
             </li>
           </ul>
@@ -228,15 +246,318 @@
           <ul class="projectsContainer">
             <!-- Plan-it project -->
             <li class="projectOuterContainer">
-              <a>
-                <div class="projectContainer">
-                  <div class="projectImg">
-                    <!-- TODO: -->
-                    <img src="" alt="" />
+              <div class="projectContainer planItContainer">
+                <h3 class="projectTitle">planIt</h3>
+
+                <div class="projectInnerContainer">
+                  <!-- Project image -->
+                  <div class="projectImgContainer">
+                    <a href="https://just-plan-it.netlify.app/">
+                      <img
+                        src="./assets/planIt.PNG"
+                        alt="Photo of planIt, a project management website created by Kaunain Karmali"
+                        class="projectImg"
+                      />
+                    </a>
                   </div>
-                  <div class="projectText"></div>
+
+                  <!-- Project content -->
+                  <div class="projectContentContainer">
+                    <!-- Tech stack -->
+                    <ul class="techStack">
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-react-original
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-firebase-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Project description -->
+                    <p class="projectDescription">
+                      A project management tool, designed for service
+                      professionals (e.g., Freelancers, Lawyers etc.) to oversee
+                      multiple tasks, and track time at a task level.
+                    </p>
+                    <div class="btnContainer">
+                      <a
+                        href="https://just-plan-it.netlify.app/"
+                        class="btn primaryBtn"
+                        >Website</a
+                      >
+                      <a
+                        href="https://github.com/KaunainKarmali/plan-it-2.0/tree/main"
+                        class="btn secondaryBtn githubBtn"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
                 </div>
-              </a>
+              </div>
+            </li>
+
+            <!-- Show-mak project -->
+            <li class="projectOuterContainer">
+              <div class="projectContainer showMakContainer">
+                <h3 class="projectTitle">SHOW MAK</h3>
+
+                <!-- TODO: change class name -->
+                <div class="projectInnerContainer">
+                  <!-- Project image -->
+                  <div class="projectImgContainer">
+                    <a href="https://show-mak.netlify.app/">
+                      <img
+                        src="./assets/showMak.png"
+                        alt="Photo of Show MAK, a website to search and follow your favourite TV shows created by the team of Kaunain Karmali, Abdulkadir Musse, and Mao Kitamura"
+                        class="projectImg"
+                      />
+                    </a>
+                  </div>
+
+                  <!-- Project content -->
+                  <div class="projectContentContainer">
+                    <!-- Tech stack -->
+                    <ul class="techStack">
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-react-original
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-firebase-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="fas fa-cogs skillIcon restApi techStackIcon"
+                          ></i>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Project description -->
+                    <p class="projectDescription">
+                      Powered by the TVmaze API, search for your favourite TV
+                      Show using the dynamic search bar. Create a custom list to
+                      follow any show. User's can add, remove, upvote or
+                      downvote multiple TV shows in each list. Created by the
+                      team of Abdulkadir Musse, Mao Kitamura and Kaunain
+                      Karmali.
+                    </p>
+                    <div class="btnContainer">
+                      <a
+                        href="https://show-mak.netlify.app/"
+                        class="btn primaryBtn"
+                        >Website</a
+                      >
+                      <a
+                        href="https://github.com/proj-four/project-four/tree/production"
+                        class="btn secondaryBtn githubBtn"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- NBA Code Stars project -->
+            <li class="projectOuterContainer">
+              <div class="projectContainer nbaCodeStarsContainer">
+                <h3 class="projectTitle">NBA Code Stars</h3>
+
+                <!-- TODO: change class name -->
+                <div class="projectInnerContainer">
+                  <!-- Project image -->
+                  <div class="projectImgContainer">
+                    <a href="https://nbacodestars.netlify.app/">
+                      <img
+                        src="./assets/nbaCodeStars.png"
+                        alt="Photo of Show MAK, a website to search and follow your favourite TV shows created by the team of Kaunain Karmali, Abdulkadir Musse, and Mao Kitamura"
+                        class="projectImg"
+                      />
+                    </a>
+                  </div>
+
+                  <!-- Project content -->
+                  <div class="projectContentContainer">
+                    <!-- Tech stack -->
+                    <ul class="techStack">
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-sass-original
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-javascript-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="fas fa-cogs skillIcon restApi techStackIcon"
+                          ></i>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Project description -->
+                    <p class="projectDescription">
+                      Review the key player data and season stats for every
+                      active NBA team roster. Leverages Sports Data REST APIs
+                      services to dynamically display NBA player stats. Also
+                      includes a custom-built fully accessible dropdown menu.
+                      Created by the team of Andrew Craig and Kaunain Karmali.
+                    </p>
+                    <div class="btnContainer">
+                      <a
+                        href="https://nbacodestars.netlify.app/"
+                        class="btn primaryBtn"
+                        >Website</a
+                      >
+                      <a
+                        href="https://github.com/NBACodeStars/NBACodeStars/tree/main"
+                        class="btn secondaryBtn githubBtn"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- 2048 project -->
+            <li class="projectOuterContainer">
+              <div class="projectContainer gameContainer">
+                <h3 class="projectTitle">2048</h3>
+
+                <!-- TODO: change class name -->
+                <div class="projectInnerContainer">
+                  <!-- Project image -->
+                  <div class="projectImgContainer">
+                    <a href="https://2048-dev2k.netlify.app/">
+                      <img
+                        src="./assets/2048.png"
+                        alt="Photo of 2048, a tile-collapsing game created by Kaunain Karmali"
+                        class="projectImg"
+                      />
+                    </a>
+                  </div>
+
+                  <!-- Project content -->
+                  <div class="projectContentContainer">
+                    <!-- Tech stack -->
+                    <ul class="techStack">
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-html5-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-css3-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+
+                      <li class="skillContainer">
+                        <div class="skillIconContainer">
+                          <i
+                            class="
+                              devicon-jquery-plain
+                              colored
+                              skillIcon
+                              techStackIcon
+                            "
+                          ></i>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Project description -->
+                    <p class="projectDescription">
+                      The recreation of a tile-collapsing game, originally
+                      invented by Gabriele Cirulli. Designed as a name spaced
+                      app, with an algorithm that responds to keypresses and
+                      mobile gestures.
+                    </p>
+                    <div class="btnContainer">
+                      <a
+                        href="https://2048-dev2k.netlify.app/"
+                        class="btn primaryBtn"
+                        >Website</a
+                      >
+                      <a
+                        href="https://github.com/KaunainKarmali/2048/tree/main"
+                        class="btn secondaryBtn githubBtn"
+                        >Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </section>
@@ -246,47 +567,104 @@
           <h2 class="sectionTitle">Contact</h2>
 
           <div class="contactContainer">
-            <!-- Contact links -->
-            <div class="contactLinksContainer">
-              <ul>
-                <li>
-                  <a href="linkedIn"></a>
-                  <p>LinkedIn</p>
-                </li>
-                <li>
-                  <a href="twitter"></a>
-                  <p>Twitter</p>
-                </li>
-                <li>
-                  <a href="email"></a>
-                  <p>kaunaink@gmail.com</p>
-                </li>
-              </ul>
+            <!-- Left side of contact section -->
+            <div class="leftContainer">
+              <div class="contactImgContainer">
+                <img
+                  src="./assets/contact.png"
+                  alt="Photo of Kaunain Karmali looking towards a pond"
+                  class="contactImg"
+                />
+              </div>
+
+              <!-- Contact details -->
+              <div class="contactLinksContainer">
+                <h3 class="cta">I'd love to chat!</h3>
+
+                <!-- Contact specifics -->
+                <ul class="contactIconsWrapper">
+                  <li class="contactIconContainer">
+                    <i class="fas fa-map-marker-alt contactIcon smallIcon"></i>
+                    <p>Toronto, Ontario</p>
+                  </li>
+                  <li class="contactIconContainer">
+                    <i class="fas fa-mobile-alt contactIcon smallIcon"></i>
+                    <p>(647) 648-6332</p>
+                  </li>
+                  <li class="contactIconContainer">
+                    <i class="far fa-envelope contactIcon smallIcon"></i>
+                    <p>kaunaink@gmail.com</p>
+                  </li>
+                </ul>
+
+                <!-- Contact links -->
+
+                <ul class="contactLinksWrapper">
+                  <li>
+                    <a href="https://github.com/KaunainKarmali">
+                      <i class="fab fa-github contactIcon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/kaunainkarmali/">
+                      <i class="fab fa-linkedin contactIcon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/KaunainKarmali">
+                      <i class="fab fa-twitter contactIcon"></i>
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
             </div>
 
             <!-- Contact form -->
-
             <!-- TODO: Build error handling into this -->
-            <div>
+            <div class="contactFormContainer">
               <!-- TODO: Setup the form to auto email to my inbox -->
-              <form action="/">
+              <form
+                action="mailto:kaunaink@gmail.com"
+                method="POST"
+                enctype="multipart/form-data"
+                name="”EmailForm”"
+              >
                 <!-- Name input -->
-                <input type="text" id="name" class="contactInput" />
-                <label for="name" class="contactLabel">Name</label>
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    id="name"
+                    class="contactInput"
+                    placeholder="Name"
+                  />
+                  <label for="name" class="sr-only">Name</label>
+                </div>
 
                 <!-- Email input -->
-                <input type="text" id="email" class="contactInput" />
-                <label for="email" class="contactLabel">Email</label>
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    id="email"
+                    class="contactInput"
+                    placeholder="Email"
+                  />
+                  <label for="email" class="sr-only">Email</label>
+                </div>
 
                 <!-- Message input -->
-                <textarea
-                  type="text"
-                  id="message"
-                  class="contactInput"
-                ></textarea>
-                <label for="message" class="contactLabel">Message</label>
+                <div class="inputContainer">
+                  <textarea
+                    type="text"
+                    id="message"
+                    placeholder="Message"
+                    class="contactInput"
+                    rows="5"
+                  ></textarea>
+                  <label for="message" class="sr-only">Message</label>
+                </div>
 
-                <button type="submit" class="contactSubmitBtn">
+                <button type="submit" class="btn primaryBtn contactSubmitBtn">
                   Let's talk
                 </button>
               </form>
