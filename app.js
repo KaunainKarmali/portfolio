@@ -92,7 +92,7 @@ app.formListener = () => {
 
     fetch("/", {
       method: "POST",
-      headers: { "Cont ent-Type": "application/x-www-form-urlencoded" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
