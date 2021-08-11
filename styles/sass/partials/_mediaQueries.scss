@@ -1,0 +1,58 @@
+@media (max-width: 800px) {
+  // Nav slider
+
+  .openMenuBtn,
+  .closeMenuBtn {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    width: 80%;
+    grid-template-rows: repeat(6, 70px) auto;
+    grid-template-columns: 1fr;
+    background-color: $coolGrey;
+    margin-right: -100%;
+    z-index: 20;
+  }
+
+  .navLink {
+    display: block;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: $primary;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      width: 0%;
+    }
+  }
+
+  // Shows the nav menu
+  .open {
+    margin-right: 0%;
+  }
+
+  // applies background to body when nav is open
+  .dimBg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(85, 91, 110, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+}
