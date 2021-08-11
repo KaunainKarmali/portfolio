@@ -2,39 +2,144 @@
 // Nav styles
 // **********************************************
 
+nav {
+  position: relative;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  padding: 20px 0px;
   background-color: $primary;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  padding: 15px 0px;
 }
 
 // Logo
 
 .logoContainer {
-  width: 50px;
+  width: 60px;
+  margin-left: -10px;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: none;
+  }
+
+  &:focus-within a {
+    outline: none;
+  }
+}
+
+.logo {
+  padding: 10px;
+}
+
+// Menu btn
+
+.openMenuBtn,
+.closeMenuBtn {
+  color: $secondary;
+  display: none;
+}
+
+.openMenuIcon,
+.closeMenuIcon {
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+
+.openMenuBtn,
+.closeMenuBtn {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.closeMenuBtn {
+  margin-left: auto;
+  padding: 20px 20px 20px 50px;
+  padding-left: 50px;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    color: $red;
+  }
+}
+
+.openMenuText {
+  display: block;
+  text-transform: uppercase;
+}
+
+// Nav menu background
+
+.menuBg {
+  transition: all 0.3s ease-in-out;
 }
 
 // Nav links
 
 .navLinks {
-  flex-grow: 10;
   width: 50%;
   max-width: 500px;
+  flex-grow: 10;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-template-rows: 1fr;
   column-gap: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
 .navLink {
   padding: 10px 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    margin: 0px 15px;
+    height: 5px;
+    background-color: $coolGrey;
+    transition: 0.2s all ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    width: calc(100% - 15px * 2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.linkOne::after {
+  transform: rotate(3deg);
+}
+
+.linkTwo::after {
+  transform: rotate(-3deg);
+}
+
+.linkThree::after {
+  transform: rotate(4deg);
+}
+
+.linkFour::after {
+  transform: rotate(-4deg);
+}
+
+.linkFive::after {
+  transform: rotate(2deg);
 }
 
 // **********************************************
@@ -47,12 +152,13 @@
 }
 
 .landingChild {
-  width: 48%;
+  width: 38%;
   display: flex;
   align-items: center;
 }
 
 .landingTextContainer {
+  width: 60%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -61,21 +167,24 @@
 // Landing text
 
 h1 {
-  font-size: calc(2rem + 2vw);
-  color: $darkGrey;
+  font-size: calc(1.5rem + 2vw);
   margin-bottom: 20px;
+  position: relative;
+  color: $secondary;
 }
 
+.name,
 .characteristic {
   display: block;
 }
 
 h4 {
   font-size: calc(1rem + 0.25vw);
-  color: $darkBlue;
+  color: $coolGrey;
+  width: 80%;
 }
 
 .selfPortrait {
   max-height: 80vh;
-  border-radius: 30px;
+  border-radius: 10px;
 }

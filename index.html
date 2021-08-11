@@ -35,32 +35,44 @@
   <body>
     <!-- TODO: Skip to main link -->
 
+    <!-- Dims the background when the nav menu is opened -->
+    <div id="menuBg" class="menuBg"></div>
+
     <!-- Header -->
     <header id="home">
       <div class="wrapper">
         <!-- Nav -->
-        <nav>
-          <div class="wrapper navBar">
-            <!-- Logo -->
-            <div class="logoContainer">
-              <a href="#home">
-                <img
-                  class="logo"
-                  src="./assets/logo.png"
-                  alt="Kaunain Karmali logo"
-                />
-              </a>
-            </div>
-
-            <!-- Nav options -->
-            <ul class="navLinks">
-              <li><a class="navLink" href="#home">Home</a></li>
-              <li><a class="navLink" href="#about">About</a></li>
-              <li><a class="navLink" href="#skills">Skills</a></li>
-              <li><a class="navLink" href="#projects">Projects</a></li>
-              <li><a class="navLink" href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navBar">
+          <!-- Logo -->
+          <div class="logoContainer">
+            <a href="#home">
+              <img
+                class="logo"
+                src="./assets/logo.png"
+                alt="Kaunain Karmali logo"
+              />
+            </a>
           </div>
+
+          <button class="openMenuBtn btn">
+            <i class="fas fa-hamburger openMenuIcon"></i
+            ><span class="openMenuText">Menu</span>
+          </button>
+
+          <!-- Nav options -->
+          <ul class="navLinks">
+            <li>
+              <button class="closeMenuBtn btn">
+                <i class="fas fa-times closeMenuIcon"></i>
+                <span class="sr-only">Close nav menu</span>
+              </button>
+            </li>
+            <li><a class="navLink linkOne" href="#home">Home</a></li>
+            <li><a class="navLink linkTwo" href="#about">About</a></li>
+            <li><a class="navLink linkThree" href="#skills">Skills</a></li>
+            <li><a class="navLink linkFour" href="#projects">Projects</a></li>
+            <li><a class="navLink linkFive" href="#contact">Contact</a></li>
+          </ul>
         </nav>
 
         <!-- Landing page -->
@@ -68,9 +80,9 @@
           <!-- Landing text -->
           <div class="landingChild landingTextContainer">
             <h1>
-              Hi, I'm
-              <span class="name">Kaunain.</span>
-              <span class="characteristic">A Developer.</span>
+              Hello!
+              <span class="name">I'm Kaunain.</span>
+              <span class="characteristic">A Front-End Developer.</span>
             </h1>
             <h4>
               I’m also a Chartered Accountant and an avid basketball fan with a
@@ -678,5 +690,7 @@
     <footer>
       <p class="footerText">Created by Kaunain Karmali</p>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
