@@ -5,15 +5,16 @@ const app = {};
 // Global variables
 app.nav = document.getElementsByClassName("navLinks")[0];
 app.menuBg = document.getElementsByClassName("menuBg")[0];
-app.navLink = [...document.getElementsByClassName("navLink")]; // Spred operator converts HTML collection into an array
 
+// **********************************************
 // Toggle menu open and close
+// **********************************************
 
 // Add event listener to the nav menu to listen for open and close clicks
 app.menuListener = () => {
-  // **********************************************
-  // Menu open listener
-  // **********************************************
+  // -----------------------------------------
+  // Menu open listeners
+  // -----------------------------------------
   const openBtn = document.getElementsByClassName("openMenuBtn")[0];
 
   // Open if btn is clicked
@@ -29,9 +30,9 @@ app.menuListener = () => {
   // Close if a nav link is clicked
   openBtn.addEventListener("click", app.openMenu);
 
-  // **********************************************
-  // Menu close listener
-  // **********************************************
+  // -----------------------------------------
+  // Menu close listeners
+  // -----------------------------------------
 
   const closeBtn = document.getElementsByClassName("closeMenuBtn")[0];
 
@@ -49,8 +50,9 @@ app.menuListener = () => {
   app.menuBg.addEventListener("click", app.closeMenu);
 
   // Close if a nav link is clicked or pressed
-  console.log(app.navLink);
-  app.navLink.forEach((link) => {
+  const navLinks = [...document.getElementsByClassName("navLink")]; // Spread operator converts HTML collection into an array
+
+  navLinks.forEach((link) => {
     link.addEventListener("click", app.closeMenu);
     link.addEventListener("keydown", (e) => {
       if (e.keyCode === 32 || e.keyCode === 13) {
@@ -60,15 +62,48 @@ app.menuListener = () => {
   });
 };
 
+// Opens nav menu
 app.openMenu = () => {
   app.nav.classList.add("open");
   app.menuBg.classList.add("dimBg");
 };
 
+// Closes nav menu
 app.closeMenu = () => {
   app.nav.classList.remove("open");
   app.menuBg.classList.remove("dimBg");
 };
 
+// **********************************************
+// Contact form submission
+// **********************************************
+
+app.formListener = () => {
+  document.querySelector("form").addEventListener("submit", (e) => {
+    handleSubmit(e);
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let myForm = document.getElementById("contactForm");
+    let formData = new FormData(myForm);
+
+    // console.log(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
+};
+
+// **********************************************
+// Call functions on start
+// **********************************************
+
 // Call functions on initialization
 app.menuListener();
+app.formListener();
