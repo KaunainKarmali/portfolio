@@ -353,7 +353,7 @@ header {
   font-size: 0.9rem;
   -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  border: 1px solid;
+  border: 2px solid;
   font-weight: 700;
 }
 .btn:hover, .btn:focus, .btn:focus-visible, .btn:active {
@@ -363,25 +363,13 @@ header {
 }
 
 .primaryBtn {
-  color: #2d3747;
-  background-color: #98c1d9;
-  border-color: #98c1d9;
-}
-.primaryBtn:hover, .primaryBtn:focus, .primaryBtn:focus-visible, .primaryBtn:active {
-  color: white;
-  background-color: #3d5a80;
-  border-color: #3d5a80;
-}
-
-.secondaryBtn {
   color: white;
   background-color: transparent;
-  border-color: transparent;
+  border-color: #faf9f9;
 }
-.secondaryBtn:hover, .secondaryBtn:focus, .secondaryBtn:active {
-  color: #2d3747;
-  background-color: rgba(152, 193, 217, 0.3);
-  border-color: rgba(152, 193, 217, 0.3);
+.primaryBtn:hover, .primaryBtn:focus, .primaryBtn:active {
+  color: #555b6e;
+  background-color: rgba(250, 249, 249, 0.8);
 }
 
 nav {
@@ -667,61 +655,77 @@ h3 {
   color: #b97a95;
 }
 
-.projectOuterContainer {
-  margin-bottom: 60px;
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  height: 100%;
 }
 
 .projectContainer {
-  border-radius: 30px;
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  color: white;
 }
 
 .planItContainer {
   background: #1eae98;
-  background: linear-gradient(141deg, #1eae98 0%, #6d967f 70%, #ee6f57 100%);
-  color: white;
 }
 
 .showMakContainer {
   background: #0b0c10;
-  background: linear-gradient(141deg, #0b0c10 0%, #45a29e 100%);
-  color: white;
 }
 
 .nbaCodeStarsContainer {
-  background: #283149;
-  background: linear-gradient(141deg, #283149 0%, #f73859 100%);
-  color: white;
+  background: #f73859;
 }
 
 .gameContainer {
-  background: #fc5185;
-  background: linear-gradient(141deg, #fc5185 0%, #072740 100%);
-  color: white;
+  background: #072740;
 }
 
-.projectInnerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.snakeGameContainer {
+  background: #a03c78;
+}
+.snakeGameContainer .githubBtn {
+  margin-left: 0px;
 }
 
 .projectTitle {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   font-size: calc(2rem + 0.5vw);
 }
 
 .projectImg {
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .projectContentContainer {
-  margin-left: 30px;
-  min-width: 35%;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -738,22 +742,22 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
-.techStack .skillIconContainer {
-  padding: 10px 30px;
-}
-.techStack:first-child .skillIconContainer {
-  padding-left: 0px;
+.techStack .skillContainer {
+  color: #ffd6ba;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #555b6e;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .projectDescription {
   font-size: 1rem;
   line-height: 1.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
 }
 
 .githubBtn {

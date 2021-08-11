@@ -82,74 +82,70 @@ h3 {
 // Project section styles
 // **********************************************
 
-.projectOuterContainer {
-  margin-bottom: 60px;
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  height: 100%;
 }
 
 .projectContainer {
-  border-radius: 30px;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  color: $white;
 }
 
 .planItContainer {
   background: rgb(30, 174, 152);
-  background: linear-gradient(
-    141deg,
-    rgba(30, 174, 152, 1) 0%,
-    rgba(109, 150, 127, 1) 70%,
-    rgba(238, 111, 87, 1) 100%
-  );
-  color: $white;
 }
 
 .showMakContainer {
   background: rgb(11, 12, 16);
-  background: linear-gradient(
-    141deg,
-    rgba(11, 12, 16, 1) 0%,
-    rgba(69, 162, 158, 1) 100%
-  );
-  color: $white;
 }
 
 .nbaCodeStarsContainer {
-  background: rgb(40, 49, 73);
-  background: linear-gradient(
-    141deg,
-    rgba(40, 49, 73, 1) 0%,
-    rgba(247, 56, 89, 1) 100%
-  );
-  color: $white;
+  background: rgb(247, 56, 89);
 }
 
 .gameContainer {
-  background: rgb(252, 81, 133);
-  background: linear-gradient(
-    141deg,
-    rgba(252, 81, 133, 1) 0%,
-    rgba(7, 39, 64, 1) 100%
-  );
-  color: $white;
+  background: rgb(7, 39, 64);
 }
 
-.projectInnerContainer {
-  display: flex;
+.snakeGameContainer {
+  background: #a03c78;
+
+  & .githubBtn {
+    margin-left: 0px;
+  }
+}
+
+.projectImgContainer {
 }
 
 .projectTitle {
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   font-size: calc(2rem + 0.5vw);
 }
 
 .projectImg {
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .projectContentContainer {
-  margin-left: 30px;
-  min-width: 35%;
+  flex-grow: 10;
+  // height: calc(300px + 2rem);
+  // height: 100%;
+  padding: 2rem;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -157,25 +153,32 @@ h3 {
   font-size: 2rem;
 }
 
+// Styles for icons in the
+
 .techStack {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 
-  & .skillIconContainer {
-    padding: 10px 30px;
+  & .skillContainer {
+    color: $primary;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: $secondary;
+    border-radius: 5px;
+    margin-right: 10px;
   }
 
-  &:first-child .skillIconContainer {
-    padding-left: 0px;
-  }
+  // &:first-child .skillIconContainer {
+  //   padding-left: 0px;
+  // }
 }
 
 .projectDescription {
   font-size: 1rem;
   line-height: 1.2rem;
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
 }
 
 .githubBtn {

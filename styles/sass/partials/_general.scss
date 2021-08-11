@@ -83,7 +83,7 @@ header {
   font-size: 0.9rem;
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
     0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-  border: 1px solid;
+  border: 2px solid;
   font-weight: 700;
 
   &:hover,
@@ -97,30 +97,14 @@ header {
 }
 
 .primaryBtn {
-  color: $darkGrey;
-  background-color: $lightBlue;
-  border-color: $lightBlue;
-
-  &:hover,
-  &:focus,
-  &:focus-visible,
-  &:active {
-    color: $white;
-    background-color: $darkBlue;
-    border-color: $darkBlue;
-  }
-}
-
-.secondaryBtn {
   color: $white;
   background-color: transparent;
-  border-color: transparent;
+  border-color: $offWhite;
 
   &:hover,
   &:focus,
   &:active {
-    color: $darkGrey;
-    background-color: rgba(152, 193, 217, 0.3);
-    border-color: rgba(152, 193, 217, 0.3);
+    color: $secondary;
+    background-color: rgba(250, 249, 249, 0.8);
   }
 }
