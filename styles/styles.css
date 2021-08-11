@@ -439,7 +439,7 @@ nav {
 .closeMenuBtn:hover, .closeMenuBtn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #d90429;
+  color: #ff6767;
 }
 
 .openMenuText {
@@ -871,6 +871,43 @@ h3 {
   border-width: 2px;
   padding: calc(13px - 1px);
   border-color: #555b6e;
+}
+
+.formSubmitBtnContainer {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.formMessage {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.messageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #555b6e;
+}
+
+.successContainer {
+  color: #93d9a3;
+}
+
+.failContainer {
+  color: #ff6767;
+}
+
+.formIcon {
+  font-size: 1.5rem;
+  margin-right: 5px;
 }
 
 footer {

@@ -647,9 +647,29 @@
                   <label for="message" class="sr-only">Message</label>
                 </div>
 
-                <button type="submit" class="btn primaryBtn contactSubmitBtn">
-                  Let's talk
-                </button>
+                <div class="formSubmitBtnContainer">
+                  <button type="submit" class="btn primaryBtn contactSubmitBtn">
+                    Let's talk
+                  </button>
+                  <div class="formMessage">
+                    <div id="successMsg" class="hide">
+                      <p class="messageContainer successContainer">
+                        <i class="fas fa-check-square formIcon"></i>
+                        <span>Submitted successfully</span>
+                      </p>
+                    </div>
+
+                    <div id="failMsg" class="hide">
+                      <p class="messageContainer failContainer">
+                        <i class="fas fa-times-circle formIcon"></i>
+
+                        <span
+                          >Submission not successful. Please try again.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
