@@ -601,7 +601,12 @@
             <!-- TODO: Build error handling into this -->
             <div class="contactFormContainer">
               <!-- TODO: Setup the form to auto email to my inbox -->
-              <form method="POST" name="contactForm" data-netlify="true">
+              <form
+                id="contactForm"
+                method="POST"
+                name="contactForm"
+                data-netlify="true"
+              >
                 <!-- Name input -->
                 <div class="inputContainer">
                   <input
@@ -609,6 +614,7 @@
                     id="name"
                     class="contactInput"
                     placeholder="Name"
+                    required
                   />
                   <label for="name" class="sr-only">Name</label>
                 </div>
@@ -616,10 +622,11 @@
                 <!-- Email input -->
                 <div class="inputContainer">
                   <input
-                    type="text"
+                    type="email"
                     id="email"
                     class="contactInput"
                     placeholder="Email"
+                    required
                   />
                   <label for="email" class="sr-only">Email</label>
                 </div>
@@ -632,6 +639,7 @@
                     placeholder="Message"
                     class="contactInput"
                     rows="5"
+                    required
                   ></textarea>
                   <label for="message" class="sr-only">Message</label>
                 </div>
