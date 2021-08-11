@@ -89,6 +89,8 @@ app.formListener = () => {
     let myForm = document.getElementById("contactForm");
     let formData = new FormData(myForm);
 
+    console.log(formData);
+
     // console.log(myForm);
     fetch("/", {
       method: "POST",
