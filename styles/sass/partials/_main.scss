@@ -284,3 +284,36 @@ h3 {
     border-color: $secondary;
   }
 }
+
+.formSubmitBtnContainer {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.formMessage {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: $secondary;
+}
+
+.successContainer {
+  color: $green;
+}
+
+.failContainer {
+  color: $red;
+}
+
+.formIcon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
