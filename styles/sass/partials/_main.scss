@@ -218,7 +218,7 @@ h3 {
 
 .contactImgContainer {
   width: 40%;
-  margin-right: 10px;
+  margin-right: 30px;
 
   img {
     border-radius: 5px;
@@ -257,17 +257,19 @@ h3 {
 }
 
 .contactInput {
-  background-color: $darkBlue;
+  background-color: $coolGrey;
   color: $white;
-  border: 1px solid $darkGrey;
+  border: 1px solid $coolGrey;
   padding: 13px;
   font-size: 1rem;
   border-radius: 5px;
   width: 100%;
   margin-bottom: 10px;
+  font-weight: 700;
 
   &::placeholder {
     color: $white;
+    font-weight: 700;
   }
 
   &:hover {
@@ -281,7 +283,7 @@ h3 {
     outline: 0;
     border-width: 2px;
     padding: calc(13px - 1px);
-    border-color: $secondary;
+    border-color: $black;
   }
 }
 

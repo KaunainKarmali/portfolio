@@ -2,7 +2,7 @@ body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   background-color: $primary;
-  color: $darkGrey;
+  color: $secondary;
 }
 
 h1,
@@ -35,7 +35,7 @@ li {
 a {
   display: inline-block;
   text-decoration: none;
-  color: $darkGrey;
+  color: $secondary;
 }
 
 img {
@@ -106,5 +106,19 @@ header {
   &:active {
     color: $secondary;
     background-color: rgba(250, 249, 249, 0.8);
+  }
+}
+
+.secondaryBtn {
+  color: $secondary;
+  background-color: $coralSea;
+  border-color: $coralSea;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $coolGrey;
+    border-color: $coolGrey;
   }
 }
