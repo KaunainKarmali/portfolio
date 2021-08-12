@@ -87,8 +87,11 @@ app.formListener = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let myForm = document.getElementById("contactForm");
-    let formData = new FormData(myForm);
+    const myForm = document.getElementById("contactForm");
+    const formData = new FormData(myForm);
+
+    const successMsg = document.getElementById("successMsg");
+    const failMsg = document.getElementById("failMsg");
 
     fetch("/", {
       method: "POST",
@@ -102,11 +105,10 @@ app.formListener = () => {
         document.getElementsByName("message")[0].value = "";
 
         // Show success message
-        const successMsg = document.getElementById("successMsg");
+
         successMsg.classList.remove("hide");
 
         // Hide fail message (in case it is showing)
-        const failMsg = document.getElementById("failMsg");
         failMsg.classList.add("hide");
 
         // Hide success message after a few seconds
@@ -114,11 +116,9 @@ app.formListener = () => {
       })
       .catch((error) => {
         // Show failure message
-        const failMsg = document.getElementById("failMsg");
         failMsg.classList.remove("hide");
 
         // Hide success message (in case it is showing)
-        const successMsg = document.getElementById("successMsg");
         successMsg.classList.add("hide");
 
         // Hide failure message after a few seconds
