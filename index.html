@@ -32,7 +32,7 @@
 
     <title>Kaunain Karmali</title>
   </head>
-  <body>
+  <body class="pageColor">
     <!-- TODO: Skip to main link -->
 
     <!-- Dims the background when the nav menu is opened -->
@@ -104,9 +104,9 @@
 
     <!-- Main -->
     <main>
-      <div class="wrapper">
-        <!-- About section -->
-        <section id="about">
+      <!-- About section -->
+      <section id="about">
+        <div class="wrapper">
           <div class="aboutContainer">
             <!-- About image container -->
             <div class="aboutImgContainer">
@@ -140,118 +140,121 @@
               </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- TODO: Decide whether to add a currently reading section -->
+      <!-- TODO: Decide whether to add a currently reading section -->
 
-        <!-- Skills section -->
-        <section id="skills">
+      <!-- Skills section -->
+      <section id="skills">
+        <div class="wrapper">
           <h2 class="sectionTitle">Skills</h2>
 
           <!-- Skills container -->
           <ul class="skillsContainer">
-            <!-- TODO: add logo images to the image tags below -->
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-html5-plain colored skillIcon"></i>
+                <i class="devicon-html5-plain skillIcon"></i>
                 <h3 class="skillText">HTML</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-css3-plain colored skillIcon"></i>
+                <i class="devicon-css3-plain skillIcon"></i>
                 <h3 class="skillText">CSS</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-javascript-plain colored skillIcon"></i>
+                <i class="devicon-javascript-plain skillIcon"></i>
                 <h3 class="skillText">JavaScript</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-react-original colored skillIcon"></i>
+                <i class="devicon-react-original skillIcon"></i>
                 <h3 class="skillText">React</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-sass-original colored skillIcon"></i>
+                <i class="devicon-sass-original skillIcon"></i>
                 <h3 class="skillText">SASS/SCSS</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-jquery-plain colored skillIcon"></i>
+                <i class="devicon-jquery-plain skillIcon"></i>
                 <h3 class="skillText">jQuery</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-firebase-plain colored skillIcon"></i>
+                <i class="devicon-firebase-plain skillIcon"></i>
                 <h3 class="skillText">Firebase</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-nodejs-plain colored skillIcon"></i>
+                <i class="devicon-nodejs-plain skillIcon"></i>
                 <h3 class="skillText">Node</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-express-original colored skillIcon"></i>
+                <i class="devicon-express-original skillIcon"></i>
                 <h3 class="skillText">Express</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-mongodb-plain colored skillIcon"></i>
+                <i class="devicon-mongodb-plain skillIcon"></i>
                 <h3 class="skillText">MongoDB</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-python-plain colored skillIcon"></i>
+                <i class="devicon-python-plain skillIcon"></i>
                 <h3 class="skillText">Python</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-jupyter-plain colored skillIcon"></i>
+                <i class="devicon-jupyter-plain skillIcon"></i>
                 <h3 class="skillText">Jupyter</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="fas fa-cogs skillIcon restApi"></i>
+                <i class="fas fa-cogs skillIcon"></i>
                 <h3 class="skillText">Rest API</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="fas fa-universal-access skillIcon accessibility"></i>
+                <i class="fas fa-universal-access skillIcon"></i>
                 <h3 class="skillText">Accessibility</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-git-plain colored skillIcon"></i>
+                <i class="devicon-git-plain skillIcon"></i>
                 <h3 class="skillText">Git</h3>
               </div>
             </li>
-            <li class="skillContainer">
+            <li class="skillContainer techContainer">
               <div class="skillIconContainer">
-                <i class="devicon-github-original colored skillIcon"></i>
+                <i class="devicon-github-original skillIcon"></i>
                 <h3 class="skillText">Github</h3>
               </div>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- Projects section -->
-        <section id="projects">
+      <!-- Projects section -->
+      <section id="projects">
+        <div class="wrapper">
           <h2 class="sectionTitle">Projects</h2>
 
           <!-- Projects container -->
@@ -348,20 +351,20 @@
                     multiple TV shows in each list. Created by the team of
                     Abdulkadir Musse, Mao Kitamura and Kaunain Karmali.
                   </p>
-                  <div class="btnContainer">
-                    <a
-                      href="https://show-mak.netlify.app/"
-                      target="_blank"
-                      class="btn primaryBtn"
-                      >Website</a
-                    >
-                    <a
-                      href="https://github.com/proj-four/project-four/tree/production"
-                      target="_blank"
-                      class="btn primaryBtn githubBtn"
-                      >Github</a
-                    >
-                  </div>
+                </div>
+                <div class="btnContainer">
+                  <a
+                    href="https://show-mak.netlify.app/"
+                    target="_blank"
+                    class="btn primaryBtn"
+                    >Website</a
+                  >
+                  <a
+                    href="https://github.com/proj-four/project-four/tree/production"
+                    target="_blank"
+                    class="btn primaryBtn githubBtn"
+                    >Github</a
+                  >
                 </div>
               </div>
             </li>
@@ -405,20 +408,20 @@
                     custom-built fully accessible dropdown menu. Created by the
                     team of Andrew Craig and Kaunain Karmali.
                   </p>
-                  <div class="btnContainer">
-                    <a
-                      href="https://nbacodestars.netlify.app/"
-                      target="_blank"
-                      class="btn primaryBtn"
-                      >Website</a
-                    >
-                    <a
-                      href="https://github.com/NBACodeStars/NBACodeStars/tree/main"
-                      target="_blank"
-                      class="btn primaryBtn githubBtn"
-                      >Github</a
-                    >
-                  </div>
+                </div>
+                <div class="btnContainer">
+                  <a
+                    href="https://nbacodestars.netlify.app/"
+                    target="_blank"
+                    class="btn primaryBtn"
+                    >Website</a
+                  >
+                  <a
+                    href="https://github.com/NBACodeStars/NBACodeStars/tree/main"
+                    target="_blank"
+                    class="btn primaryBtn githubBtn"
+                    >Github</a
+                  >
                 </div>
               </div>
             </li>
@@ -531,10 +534,12 @@
               </div>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- Contact section -->
-        <section id="contact">
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="wrapper">
           <h2 class="sectionTitle">Contact</h2>
 
           <div class="contactContainer">
@@ -572,7 +577,11 @@
 
                 <ul class="contactLinksWrapper">
                   <li>
-                    <a href="https://github.com/KaunainKarmali" target="_blank">
+                    <a
+                      href="https://github.com/KaunainKarmali"
+                      target="_blank"
+                      class="largeContactLink"
+                    >
                       <i class="fab fa-github contactIcon"></i>
                     </a>
                   </li>
@@ -580,6 +589,7 @@
                     <a
                       href="https://www.linkedin.com/in/kaunainkarmali/"
                       target="_blank"
+                      class="largeContactLink"
                     >
                       <i class="fab fa-linkedin contactIcon"></i>
                     </a>
@@ -588,19 +598,17 @@
                     <a
                       href="https://twitter.com/KaunainKarmali"
                       target="_blank"
+                      class="largeContactLink"
                     >
                       <i class="fab fa-twitter contactIcon"></i>
                     </a>
                   </li>
-                  <li></li>
                 </ul>
               </div>
             </div>
 
             <!-- Contact form -->
-            <!-- TODO: Build error handling into this -->
-            <div class="contactFormContainer">
-              <!-- TODO: Setup the form to auto email to my inbox -->
+            <div class="contactFormContainer rightContainer">
               <form
                 id="contactForm"
                 method="POST"
@@ -648,9 +656,14 @@
                 </div>
 
                 <div class="formSubmitBtnContainer">
-                  <button type="submit" class="btn primaryBtn contactSubmitBtn">
+                  <button
+                    type="submit"
+                    class="btn secondaryBtn contactSubmitBtn"
+                  >
                     Let's talk
                   </button>
+
+                  <!-- Error message container -->
                   <div class="formMessage">
                     <div id="successMsg" class="hide">
                       <p class="messageContainer successContainer">
@@ -673,12 +686,12 @@
               </form>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="contrast">
       <p class="footerText">Created by Kaunain Karmali</p>
     </footer>
 
