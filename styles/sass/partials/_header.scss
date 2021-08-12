@@ -4,6 +4,7 @@
 
 nav {
   position: relative;
+  height: 101px;
 }
 
 .navBar {
@@ -11,17 +12,24 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  background-color: $primary;
   padding: 15px 0px;
+}
+
+.leftNav {
+  display: flex;
+  align-items: center;
 }
 
 // Logo
 
 .logoContainer {
+  display: flex;
+  justify-content: center;
   width: 60px;
-  margin-left: -10px;
+  margin-left: -14px;
   border-radius: 5px;
   transition: 0.3s all ease-in-out;
+  margin-right: 10px;
 
   &:hover,
   &:focus-within {
@@ -36,18 +44,119 @@ nav {
 
 .logo {
   padding: 10px;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  object-position: bottom center;
+}
+
+// Toggle btn
+
+.toggleOuter {
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: none;
+  }
+}
+
+.toggleContainer {
+  position: relative;
+  display: inline-block;
+  background: $coolGrey;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.toggleInput {
+  position: absolute;
+  opacity: 0;
+}
+
+.toggleLabel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.left,
+.right {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  line-height: calc(40px - 5px * 2);
+  text-align: center;
+}
+
+.left,
+.right {
+  position: relative;
+}
+
+.left::before {
+  content: "";
+  line-height: calc(40px - 5px * 2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 3px $secondary solid;
+  height: calc(40px - 5px * 2 - 0px * 2);
+  width: calc(40px - 5px * 2 - 0px * 2);
+  margin: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.left::after,
+.right::before {
+  position: absolute;
+}
+
+.right::before {
+  content: "";
+  opacity: 0;
+}
+
+.left::after {
+  content: "";
+  left: 18px;
+  opacity: 1;
+}
+
+.toggleInput:checked {
+  & + .toggleLabel .left::before {
+    opacity: 1;
+    transform: translateX(40px);
+  }
+
+  & + .toggleLabel .right::before {
+    opacity: 0;
+  }
 }
 
 // Menu btn
 
 .openMenuBtn,
 .closeMenuBtn {
-  color: $secondary;
   display: none;
+  color: $secondary;
 }
 
 .openMenuIcon,
 .closeMenuIcon {
+  color: $secondary;
   font-size: 2rem;
   margin-bottom: 3px;
 }
@@ -63,17 +172,24 @@ nav {
   margin-left: auto;
   padding: 20px 20px 20px 50px;
   padding-left: 50px;
+  box-shadow: none;
+
+  &:hover > .closeMenuIcon,
+  &:focus > .closeMenuIcon {
+    box-shadow: none;
+    color: $red;
+  }
 
   &:hover,
   &:focus {
     box-shadow: none;
-    color: $red;
   }
 }
 
 .openMenuText {
   display: block;
   text-transform: uppercase;
+  color: $secondary;
 }
 
 // Nav menu background
@@ -146,6 +262,7 @@ nav {
 .landing {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .landingChild {
@@ -177,7 +294,7 @@ h1 {
   font-size: calc(1.5rem + 2vw);
   margin-bottom: 20px;
   position: relative;
-  color: $secondary;
+  // color: $secondary;
 }
 
 .name,
@@ -188,4 +305,52 @@ h1 {
 h4 {
   font-size: calc(1rem + 0.25vw);
   width: 80%;
+}
+
+// Mouse scroll
+
+// Credits to Tsukasa Aoki for this scroll effect https://codepen.io/TKS31/pen/gOaKaxx
+
+.mouseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.mouse {
+  width: 30px;
+  height: 60px;
+  border: 3px solid $coolGrey;
+  border-radius: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $coolGrey;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 35px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
 }
