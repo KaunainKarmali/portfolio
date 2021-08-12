@@ -46,7 +46,7 @@ img {
 
 header,
 section {
-  padding: 100px 0px;
+  padding: 75px 0px;
 }
 
 header {
@@ -121,4 +121,9 @@ header {
     background-color: $coolGrey;
     border-color: $coolGrey;
   }
+}
+
+.contrast {
+  background-color: $secondary;
+  color: $primary;
 }

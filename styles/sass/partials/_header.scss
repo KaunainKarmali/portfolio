@@ -85,9 +85,6 @@ nav {
 // Nav links
 
 .navLinks {
-  width: 50%;
-  max-width: 500px;
-  flex-grow: 10;
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: 1fr;
@@ -152,16 +149,26 @@ nav {
 }
 
 .landingChild {
-  width: 38%;
   display: flex;
   align-items: center;
 }
 
 .landingTextContainer {
-  width: 60%;
+  margin-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.selfPortrait {
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.landingImg {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 
 // Landing text
@@ -180,11 +187,5 @@ h1 {
 
 h4 {
   font-size: calc(1rem + 0.25vw);
-  color: $coolGrey;
   width: 80%;
-}
-
-.selfPortrait {
-  max-height: 80vh;
-  border-radius: 10px;
 }
