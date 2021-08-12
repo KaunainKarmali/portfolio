@@ -800,7 +800,7 @@ h4 {
 @keyframes wheel {
   to {
     opacity: 0;
-    top: 35px;
+    top: 30px;
   }
 }
 @-webkit-keyframes wheel {
