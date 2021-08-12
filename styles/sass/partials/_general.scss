@@ -123,7 +123,52 @@ header {
   }
 }
 
-.contrast {
-  background-color: $secondary;
-  color: $primary;
+// Scrollbar styles
+
+// Whole scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  background-color: $coralSea;
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background: $coolGrey;
+  border-radius: 30px;
+}
+
+.skipLink {
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: $coolGrey;
+  color: $white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+
+  &:focus {
+    left: 0;
+    outline: none;
+  }
+}
+
+.homeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
 }
