@@ -33,7 +33,8 @@
     <title>Kaunain Karmali</title>
   </head>
   <body class="pageColor">
-    <!-- TODO: Skip to main link -->
+    <!-- Skip link -->
+    <a href="#main" class="skipLink">Skip to main content</a>
 
     <!-- Dims the background when the nav menu is opened -->
     <div id="menuBg" class="menuBg"></div>
@@ -43,15 +44,36 @@
       <div class="wrapper">
         <!-- Nav -->
         <nav class="navBar">
-          <!-- Logo -->
-          <div class="logoContainer">
-            <a href="#home">
-              <img
-                class="logo"
-                src="./assets/logo.png"
-                alt="Kaunain Karmali logo"
-              />
-            </a>
+          <div class="leftNav">
+            <!-- Logo -->
+            <div class="logoContainer">
+              <a href="#home">
+                <img
+                  class="logo"
+                  src="./assets/logo.png"
+                  alt="Kaunain Karmali logo"
+                />
+              </a>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="toggleOuter">
+              <div class="toggleContainer">
+                <input type="checkbox" id="toggle" class="toggleInput" />
+                <label for="toggle" class="toggleLabel">
+                  <div class="left">
+                    <i class="fas fa-moon moonIcon">
+                      <p class="sr-only">Toggle dark mode</p>
+                    </i>
+                  </div>
+                  <div class="right">
+                    <i class="fas fa-sun">
+                      <p class="sr-only">Toggle light mode</p>
+                    </i>
+                  </div>
+                </label>
+              </div>
+            </div>
           </div>
 
           <button class="openMenuBtn btn">
@@ -103,7 +125,7 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="main">
       <!-- About section -->
       <section id="about">
         <div class="wrapper">

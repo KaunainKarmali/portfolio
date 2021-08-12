@@ -123,11 +123,6 @@ header {
   }
 }
 
-.contrast {
-  background-color: $secondary;
-  color: $primary;
-}
-
 // Scrollbar styles
 
 // Whole scrollbar
@@ -145,4 +140,23 @@ header {
 ::-webkit-scrollbar-thumb {
   background: $coolGrey;
   border-radius: 30px;
+}
+
+.skipLink {
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: $coolGrey;
+  color: $white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+
+  &:focus {
+    left: 0;
+    outline: none;
+  }
 }

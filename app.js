@@ -7,6 +7,47 @@ app.nav = document.getElementsByClassName("navLinks")[0];
 app.menuBg = document.getElementsByClassName("menuBg")[0];
 
 // **********************************************
+// Toggle light and dark mode
+// **********************************************
+
+app.toggleThemeListener = () => {
+  const toggle = document.getElementById("toggle");
+
+  toggle.addEventListener("click", app.toggleTheme);
+};
+
+app.toggleTheme = (e) => {
+  const body = document.querySelector("body");
+  const openMenuIcon = document.querySelector(".openMenuIcon");
+  const openMenuText = document.querySelector(".openMenuText");
+  const logo = document.querySelector(".logo");
+  const navLinks = [...document.querySelectorAll(".navLink")];
+
+  // Dark mode
+  if (e.target.checked) {
+    body.classList.add("contrast");
+    openMenuIcon.classList.add("contrastIcon");
+    openMenuText.classList.add("contrastIcon");
+    logo.setAttribute("src", "./assets/logoAlt.png");
+
+    navLinks.forEach((link) => {
+      link.classList.add("contrast");
+    });
+  }
+
+  // Light mode
+  else {
+    body.classList.remove("contrast");
+    openMenuIcon.classList.remove("contrastIcon");
+    openMenuText.classList.remove("contrastIcon");
+    logo.setAttribute("src", "./assets/logo.png");
+    navLinks.forEach((link) => {
+      link.classList.remove("contrast");
+    });
+  }
+};
+
+// **********************************************
 // Toggle menu open and close
 // **********************************************
 
@@ -132,5 +173,6 @@ app.formListener = () => {
 // **********************************************
 
 // Call functions on initialization
+app.toggleThemeListener();
 app.menuListener();
 app.formListener();
