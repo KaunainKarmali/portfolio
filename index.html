@@ -39,9 +39,16 @@
     <!-- Dims the background when the nav menu is opened -->
     <div id="menuBg" class="menuBg"></div>
 
+    <!-- Scroll to top -->
+    <div>
+      <a href="/" class="homeBtn secondaryBtn btn hideBtn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
     <!-- Header -->
     <header id="home">
-      <div class="wrapper">
+      <div class="wrapper positionRelative">
         <!-- Nav -->
         <nav class="navBar">
           <div class="leftNav">
@@ -62,13 +69,13 @@
                 <input type="checkbox" id="toggle" class="toggleInput" />
                 <label for="toggle" class="toggleLabel">
                   <div class="left">
-                    <i class="fas fa-moon moonIcon">
+                    <i class="fas fa-moon">
                       <p class="sr-only">Toggle dark mode</p>
                     </i>
                   </div>
                   <div class="right">
                     <i class="fas fa-sun">
-                      <p class="sr-only">Toggle light mode</p>
+                      <p class="sr-only">Toggle dark mode</p>
                     </i>
                   </div>
                 </label>
@@ -121,6 +128,13 @@
             />
           </div>
         </div>
+
+        <!-- Credits to Tsukasa Aoki for this mouse scroll effect https://codepen.io/TKS31/pen/gOaKaxx -->
+        <div class="mouseContainer">
+          <div class="mouse">
+            <p class="sr-only">Sroll down to see more content</p>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -142,7 +156,9 @@
 
             <!-- About text container -->
             <div class="aboutTextContainer">
-              <h2 class="sectionTitle">A little about me</h2>
+              <h2 class="sectionTitle">
+                <span class="sectionHeading">A little about me</span>
+              </h2>
 
               <p class="aboutText">
                 I'm a Chartered Accountant turned Front-end Developer based in

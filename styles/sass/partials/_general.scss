@@ -160,3 +160,15 @@ header {
     outline: none;
   }
 }
+
+.homeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}

@@ -116,6 +116,39 @@ app.closeMenu = () => {
 };
 
 // **********************************************
+// Navigate back to home
+// **********************************************
+
+app.navBtnListener = () => {
+  window.addEventListener("scroll", (e) => {
+    const yScroll = window.scrollY;
+
+    const homeBtn = document.getElementsByClassName("homeBtn")[0];
+
+    if (yScroll >= 100) {
+      homeBtn.classList.remove("hideBtn");
+    } else {
+      homeBtn.classList.add("hideBtn");
+    }
+  });
+};
+
+app.homeBtnListener = () => {
+  const homeBtn = document.getElementsByClassName("homeBtn")[0];
+
+  homeBtn.addEventListener("click", app.scrollHome);
+  homeBtn.addEventListener("keypress", (e) => {
+    if (e.keyCode === 32 || e.keyCode === 13) {
+      app.scrollHome;
+    }
+  });
+};
+
+app.scrollHome = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// **********************************************
 // Contact form submission
 // **********************************************
 
@@ -175,4 +208,6 @@ app.formListener = () => {
 // Call functions on initialization
 app.toggleThemeListener();
 app.menuListener();
+app.navBtnListener();
+app.homeBtnListener();
 app.formListener();
