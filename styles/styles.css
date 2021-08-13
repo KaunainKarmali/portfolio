@@ -1223,6 +1223,16 @@ h3 {
   font-size: 1rem;
 }
 
+.largeContactLink {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.largeContactLink:hover, .largeContactLink:active, .largeContactLink:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  outline: none;
+}
+
 .cta {
   text-align: left;
   margin-bottom: 10px;
