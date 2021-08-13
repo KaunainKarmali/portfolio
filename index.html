@@ -47,8 +47,8 @@
     </div>
 
     <!-- Header -->
-    <header id="home">
-      <div class="wrapper positionRelative">
+    <header id="home" class="home">
+      <div class="wrapper headerContainer">
         <!-- Nav -->
         <nav class="navBar">
           <div class="leftNav">
@@ -107,32 +107,30 @@
         <!-- Landing page -->
         <div class="landing">
           <!-- Landing text -->
-          <div class="landingChild landingTextContainer">
+          <div class="landingTextContainer">
             <h1>
-              Hello!
-              <span class="name">I'm Kaunain.</span>
-              <span class="characteristic">A Front-End Developer.</span>
+              Hello! I'm
+
+              <!-- Animated name -->
+              <div class="word">
+                <span>K</span>
+                <span>A</span>
+                <span>U</span>
+                <span>N</span>
+                <span>A</span>
+                <span>I</span>
+                <span>N</span>
+              </div>
+
+              A Front-End Developer.
             </h1>
-            <h4>
-              I’m also a Chartered Accountant and an avid basketball fan with a
-              passion for bringing ideas to life, using code.
-            </h4>
           </div>
 
-          <!-- Landing image -->
-          <div class="landingChild landingImgContainer">
-            <img
-              class="selfPortrait landingImg"
-              src="./assets/headerImg.jpg"
-              alt="Photo of Kaunain Karmali"
-            />
-          </div>
-        </div>
-
-        <!-- Credits to Tsukasa Aoki for this mouse scroll effect https://codepen.io/TKS31/pen/gOaKaxx -->
-        <div class="mouseContainer">
-          <div class="mouse">
-            <p class="sr-only">Sroll down to see more content</p>
+          <!-- Credits to Tsukasa Aoki for this mouse scroll effect https://codepen.io/TKS31/pen/gOaKaxx -->
+          <div class="mouseContainer">
+            <div class="mouse">
+              <p class="sr-only">Sroll down to see more content</p>
+            </div>
           </div>
         </div>
       </div>
@@ -146,11 +144,10 @@
           <div class="aboutContainer">
             <!-- About image container -->
             <div class="aboutImgContainer">
-              <!-- TODO: Add image -->
               <img
-                class="selfPortrait aboutImg"
-                src="./assets/about.jpeg"
-                alt="Photo of Kaunain Karmali standing on a bridge"
+                class="aboutImg"
+                src="./assets/headerImg.jpg"
+                alt="Photo of Kaunain Karmali"
               />
             </div>
 
