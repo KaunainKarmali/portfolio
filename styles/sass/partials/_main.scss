@@ -218,6 +218,17 @@ h3 {
   }
 }
 
+.largeContactLink {
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: scale(1.2);
+    outline: none;
+  }
+}
+
 .cta {
   text-align: left;
   margin-bottom: 10px;
