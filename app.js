@@ -22,6 +22,7 @@ app.toggleTheme = (e) => {
   const openMenuText = document.querySelector(".openMenuText");
   const logo = document.querySelector(".logo");
   const navLinks = [...document.querySelectorAll(".navLink")];
+  const contactIcons = [...document.querySelectorAll(".contactIcon")];
 
   // Dark mode
   if (e.target.checked) {
@@ -33,6 +34,10 @@ app.toggleTheme = (e) => {
     navLinks.forEach((link) => {
       link.classList.add("contrast");
     });
+
+    contactIcons.forEach((link) => {
+      link.classList.add("contrastIcon");
+    });
   }
 
   // Light mode
@@ -43,6 +48,9 @@ app.toggleTheme = (e) => {
     logo.setAttribute("src", "./assets/logo.png");
     navLinks.forEach((link) => {
       link.classList.remove("contrast");
+    });
+    contactIcons.forEach((link) => {
+      link.classList.remove("contrastIcon");
     });
   }
 };
