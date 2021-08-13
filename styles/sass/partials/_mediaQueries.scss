@@ -11,6 +11,15 @@
 
 @media (max-width: 900px) {
   // ************************
+  // About
+  // ************************
+
+  .aboutImg {
+    height: 300px;
+    width: 300px;
+  }
+
+  // ************************
   // Projects
   // ************************
   .projectTitle {
@@ -182,53 +191,50 @@
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 680px) {
+  .home {
+    height: auto;
+  }
+
+  .landing {
+    margin: 50px 0px 0px;
+    display: block;
+  }
+
   // ************************
   // About
   // ************************
+  .aboutContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .aboutImgContainer {
-    display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 
   .aboutImg {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin: 0px;
   }
-}
 
-@media (max-width: 680px) {
+  .aboutTextContainer {
+    width: 100%;
+  }
+
   // ************************
   // Projects
   // ************************
   .projectsContainer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-
     row-gap: 20px;
   }
 }
 
 @media (max-width: 650px) {
-  // ************************
-  // About
-  // ************************
-
-  .aboutTextContainer {
-    width: 60%;
-  }
-
-  .aboutImgContainer {
-    margin-right: 10px;
-  }
-
-  .aboutImg {
-    height: 250px;
-    width: 250px;
-  }
-
   // ************************
   // Skills
   // ************************
@@ -292,37 +298,28 @@
   h4 {
     width: 100%;
   }
+}
 
+@media (max-width: 500px) {
   // ************************
   // About
   // ************************
 
-  .aboutTextContainer {
-    width: 100%;
+  .aboutImg {
+    height: 250px;
+    width: 250px;
   }
 
-  .aboutImgContainer {
-    display: none;
-  }
-
-  // ************************
-  // Contact
-  // ************************
-}
-
-@media (max-width: 500px) {
   // ************************
   // Header
   // ************************
 
   h1 {
     font-size: calc(1.5rem + 2vw);
-    // text-align: center;
   }
 
   h2 {
     font-size: calc(1rem + 2vw);
-    // text-align: center;
   }
 
   // ************************
@@ -331,7 +328,6 @@
 
   .leftContainer {
     flex-direction: column;
-    // text-align: center;
   }
 
   .contactImgContainer,
@@ -351,13 +347,8 @@
     }
   }
 
-  .contactIconContainer {
-    // justify-content: center;
-  }
-
   .smallIcon {
     margin-right: 5px;
-    // justify-content: flex-end;
   }
 
   .largeContactLink {
@@ -371,7 +362,6 @@
 
   .cta {
     font-size: calc(1.5rem + 0.5vw);
-    // text-align: center;
   }
 }
 
@@ -402,6 +392,10 @@
 }
 
 @media (max-width: 400px) {
+  // ************************
+  // General
+  // ************************
+
   h4 {
     width: 100%;
   }
