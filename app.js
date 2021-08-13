@@ -48,6 +48,28 @@ app.toggleTheme = (e) => {
 };
 
 // **********************************************
+// Name animations
+// **********************************************
+
+app.nameAnimation = () => {
+  const spans = document.querySelectorAll(".word span");
+
+  spans.forEach((span, index) => {
+    span.addEventListener("click", (e) => {
+      e.target.classList.add("active");
+    });
+    span.addEventListener("animationend", (e) => {
+      e.target.classList.remove("active");
+    });
+
+    // Initial animation
+    setTimeout(() => {
+      span.classList.add("active");
+    }, 600 * (index + 1));
+  });
+};
+
+// **********************************************
 // Toggle menu open and close
 // **********************************************
 
@@ -205,9 +227,14 @@ app.formListener = () => {
 // Call functions on start
 // **********************************************
 
-// Call functions on initialization
-app.toggleThemeListener();
-app.menuListener();
-app.navBtnListener();
-app.homeBtnListener();
-app.formListener();
+app.init = () => {
+  // Call functions on initialization
+  app.toggleThemeListener();
+  app.menuListener();
+  app.nameAnimation();
+  app.navBtnListener();
+  app.homeBtnListener();
+  app.formListener();
+};
+
+app.init();
