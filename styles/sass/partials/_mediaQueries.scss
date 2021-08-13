@@ -189,6 +189,14 @@
       padding: 0.3rem 0.6rem;
     }
   }
+
+  // **********************************************
+  // Project section styles
+  // **********************************************
+
+  .projectsContainer {
+    grid-gap: 30px 30px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -230,7 +238,7 @@
   .projectsContainer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-    row-gap: 20px;
+    row-gap: 50px;
   }
 }
 
