@@ -129,15 +129,22 @@ h3 {
 }
 
 .snakeGameContainer {
-  background: #a03c78;
+  background: rgb(160, 60, 120);
 
   & .githubBtn {
     margin-left: 0px;
   }
 }
 
+.restaurantMallContainer {
+  background: rgb(153, 21, 78);
+}
+
 .projectImgContainer {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectTitle {
@@ -149,6 +156,7 @@ h3 {
 .projectImg {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 
   &:hover {
