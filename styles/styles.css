@@ -269,6 +269,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
@@ -1376,12 +1380,6 @@ footer {
   font-size: 1rem;
 }
 
-@media (max-width: 950px) {
-  .landingImg {
-    height: 300px;
-    width: 300px;
-  }
-}
 @media (max-width: 900px) {
   .aboutImg {
     height: 300px;
@@ -1414,6 +1412,21 @@ section {
 
   header {
     padding-top: 0px;
+  }
+
+  .leftNav {
+    width: calc(50% + 100px / 2);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .logoContainer {
+    margin: 0;
+    width: 86px;
+  }
+  .logoContainer a {
+    padding: 10px 20px;
   }
 
   .openMenuBtn,
@@ -1520,15 +1533,6 @@ section {
   }
 }
 @media (max-width: 680px) {
-  .home {
-    height: auto;
-  }
-
-  .landing {
-    margin: 50px 0px 0px;
-    display: block;
-  }
-
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1658,13 +1662,18 @@ section {
 
   .largeContactLink {
     padding: 10px;
-    margin-right: 10px;
+  }
+  .largeContactLink .contactIcon {
+    margin: 0px;
   }
 
   .contactLinksWrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contactLinksWrapper li {
+    margin: 0px 10px;
   }
 
   .cta {

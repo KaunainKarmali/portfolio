@@ -69,12 +69,12 @@
                 <input type="checkbox" id="toggle" class="toggleInput" />
                 <label for="toggle" class="toggleLabel">
                   <div class="left">
-                    <i class="fas fa-moon">
+                    <i class="fas fa-sun">
                       <p class="sr-only">Toggle dark mode</p>
                     </i>
                   </div>
                   <div class="right">
-                    <i class="fas fa-sun">
+                    <i class="fas fa-moon">
                       <p class="sr-only">Toggle dark mode</p>
                     </i>
                   </div>
@@ -127,11 +127,13 @@
           </div>
 
           <!-- Credits to Tsukasa Aoki for this mouse scroll effect https://codepen.io/TKS31/pen/gOaKaxx -->
-          <div class="mouseContainer">
-            <div class="mouse">
-              <p class="sr-only">Sroll down to see more content</p>
+          <a href="#main" class="mouseLink">
+            <div class="mouseContainer">
+              <div class="mouse">
+                <p class="sr-only">Sroll down to see more content</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -596,10 +598,6 @@
                     <p>Toronto, Ontario</p>
                   </li>
                   <li class="contactIconContainer">
-                    <i class="fas fa-mobile-alt contactIcon smallIcon"></i>
-                    <p>(647) 648-6332</p>
-                  </li>
-                  <li class="contactIconContainer">
                     <i class="far fa-envelope contactIcon smallIcon"></i>
                     <p>kaunaink@gmail.com</p>
                   </li>
@@ -624,15 +622,6 @@
                       class="largeContactLink"
                     >
                       <i class="fab fa-linkedin contactIcon"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/KaunainKarmali"
-                      target="_blank"
-                      class="largeContactLink"
-                    >
-                      <i class="fab fa-twitter contactIcon"></i>
                     </a>
                   </li>
                 </ul>
@@ -724,7 +713,8 @@
 
     <!-- Footer -->
     <footer class="contrast">
-      <p class="footerText">Created by Kaunain Karmali</p>
+      <!-- JS to inject the copyright text here -->
+      <p class="footerText"></p>
     </footer>
 
     <script src="./app.js"></script>
