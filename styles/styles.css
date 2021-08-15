@@ -724,7 +724,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 100%;
+  height: calc(100% - 101px);
 }
 
 .headerContainer {
@@ -1141,8 +1141,21 @@ h3 {
   margin-left: 0px;
 }
 
+.restaurantMallContainer {
+  background: #99154e;
+}
+
 .projectImgContainer {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projectTitle {
@@ -1154,6 +1167,7 @@ h3 {
 .projectImg {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  width: 100%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
