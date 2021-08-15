@@ -232,6 +232,17 @@ app.formListener = () => {
 };
 
 // **********************************************
+// Dynamically update the copyright year to the footer
+// **********************************************
+
+app.footerText = () => {
+  const year = new Date().getFullYear();
+
+  const footerText = document.getElementsByClassName("footerText")[0];
+  footerText.innerHTML = `${year} &copy | Designed and coded by Kaunain Karmali`;
+};
+
+// **********************************************
 // Call functions on start
 // **********************************************
 
@@ -243,6 +254,7 @@ app.init = () => {
   app.navBtnListener();
   app.homeBtnListener();
   app.formListener();
+  app.footerText();
 };
 
 app.init();
