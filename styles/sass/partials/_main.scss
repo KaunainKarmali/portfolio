@@ -149,6 +149,29 @@ h3 {
   }
 }
 
+.projectLink {
+  position: relative;
+}
+
+.tabletImg {
+  position: absolute;
+  width: 15%;
+  bottom: 0px;
+  right: 0px;
+  margin: 5px;
+  border-radius: 8%;
+  margin-right: calc(10% + 10px);
+}
+
+.mobileImg {
+  position: absolute;
+  width: 10%;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  border-radius: 10%;
+}
+
 .projectTitle {
   text-align: left;
   margin-bottom: 1rem;
