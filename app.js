@@ -7,6 +7,28 @@ app.nav = document.getElementsByClassName("navLinks")[0];
 app.menuBg = document.getElementsByClassName("menuBg")[0];
 
 // **********************************************
+// Apply nav style based on user scroll
+// **********************************************
+
+// Listen for scroll events to determine the style to apply
+app.scrollListener = () => {
+  document.addEventListener("scroll", app.applyNavStyle);
+};
+
+// Apply styles based on scroll position
+app.applyNavStyle = () => {
+  const scrollY = window.scrollY;
+
+  const navEl = document.querySelector("nav");
+
+  if (scrollY > 75) {
+    navEl.classList.add("addBoxShadow");
+  } else {
+    navEl.classList.remove("addBoxShadow");
+  }
+};
+
+// **********************************************
 // Toggle light and dark mode
 // **********************************************
 
@@ -23,6 +45,7 @@ app.toggleTheme = (e) => {
   const logo = document.querySelector(".logo");
   const navLinks = [...document.querySelectorAll(".navLink")];
   const contactIcons = [...document.querySelectorAll(".contactIcon")];
+  const navEl = document.querySelector("nav");
 
   // Dark mode
   if (e.target.checked) {
@@ -30,6 +53,7 @@ app.toggleTheme = (e) => {
     openMenuIcon.classList.add("contrastIcon");
     openMenuText.classList.add("contrastIcon");
     logo.setAttribute("src", "./assets/logoAlt.png");
+    navEl.classList.add("contrast");
 
     navLinks.forEach((link) => {
       link.classList.add("contrast");
@@ -45,7 +69,9 @@ app.toggleTheme = (e) => {
     body.classList.remove("contrast");
     openMenuIcon.classList.remove("contrastIcon");
     openMenuText.classList.remove("contrastIcon");
+    navEl.classList.remove("contrast");
     logo.setAttribute("src", "./assets/logo.png");
+
     navLinks.forEach((link) => {
       link.classList.remove("contrast");
     });
@@ -89,17 +115,18 @@ app.menuListener = () => {
   const openBtn = document.getElementsByClassName("openMenuBtn")[0];
 
   // Open if btn is clicked
-  openBtn.addEventListener("click", app.openMenu);
+  openBtn.addEventListener("click", () => {
+    app.openMenu();
+    app.addNavStyles();
+  });
 
   // Open if enter or space is pressed
   openBtn.addEventListener("keydown", (e) => {
     if (e.keyCode === 32 || e.keyCode === 13) {
       app.openMenu();
+      app.addNavStyles();
     }
   });
-
-  // Close if a nav link is clicked
-  openBtn.addEventListener("click", app.openMenu);
 
   // -----------------------------------------
   // Menu close listeners
@@ -108,26 +135,38 @@ app.menuListener = () => {
   const closeBtn = document.getElementsByClassName("closeMenuBtn")[0];
 
   // Close if btn is clicked
-  closeBtn.addEventListener("click", app.closeMenu);
+  closeBtn.addEventListener("click", () => {
+    app.closeMenu();
+    app.removeNavStyles();
+  });
 
   // Close if enter or space is pressed
   closeBtn.addEventListener("keydown", (e) => {
     if (e.keyCode === 32 || e.keyCode === 13) {
       app.closeMenu();
+      app.removeNavStyles();
     }
   });
 
   // Close if the blurred background is clicked
-  app.menuBg.addEventListener("click", app.closeMenu);
+  app.menuBg.addEventListener("click", () => {
+    app.closeMenu();
+    app.removeNavStyles();
+  });
 
   // Close if a nav link is clicked or pressed
   const navLinks = [...document.getElementsByClassName("navLink")]; // Spread operator converts HTML collection into an array
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", app.closeMenu);
+    link.addEventListener("click", () => {
+      app.closeMenu();
+      app.removeNavStyles();
+    });
+
     link.addEventListener("keydown", (e) => {
       if (e.keyCode === 32 || e.keyCode === 13) {
         app.closeMenu();
+        app.removeNavStyles();
       }
     });
   });
@@ -139,10 +178,32 @@ app.openMenu = () => {
   app.menuBg.classList.add("dimBg");
 };
 
+// Apply certain styles to the nav when the menu is opened
+app.addNavStyles = () => {
+  const navEl = document.querySelector("nav");
+  navEl.classList.add("transparentBg");
+  navEl.classList.remove("addBoxShadow");
+
+  const leftNavEl = document.getElementsByClassName("leftNav")[0];
+  leftNavEl.classList.add("addFilter");
+};
+
 // Closes nav menu
 app.closeMenu = () => {
   app.nav.classList.remove("open");
   app.menuBg.classList.remove("dimBg");
+};
+
+// Apply certain styles to the nav when the menu is closed
+app.removeNavStyles = () => {
+  const navEl = document.querySelector("nav");
+  navEl.classList.remove("transparentBg");
+
+  // Applies certain styles to the nav based on the user's scroll
+  app.applyNavStyle();
+
+  const leftNavEl = document.getElementsByClassName("leftNav")[0];
+  leftNavEl.classList.remove("addFilter");
 };
 
 // **********************************************
@@ -247,7 +308,8 @@ app.footerText = () => {
 // **********************************************
 
 app.init = () => {
-  // Call functions on initialization
+  // Call functions on
+  app.scrollListener();
   app.toggleThemeListener();
   app.menuListener();
   app.nameAnimation();
