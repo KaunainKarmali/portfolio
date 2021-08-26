@@ -58,14 +58,14 @@
     justify-content: space-between;
   }
 
-  .logoContainer {
-    margin: 0;
-    width: 86px;
+  // .logoContainer {
+  //   margin: 0;
+  //   width: 86px;
 
-    & a {
-      padding: 10px 20px;
-    }
-  }
+  //   & a {
+  //     padding: 10px 20px;
+  //   }
+  // }
 
   // Nav slider
 
@@ -134,6 +134,15 @@
     background-color: rgba(85, 91, 110, 0.5);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+  }
+
+  // Formats the nav heading when menu is toggled
+  .transparentBg {
+    background-color: transparent;
+  }
+
+  .addFilter {
+    filter: blur(10px);
   }
 
   // ************************
