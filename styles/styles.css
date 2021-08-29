@@ -321,13 +321,8 @@ img {
      object-position: center;
 }
 
-header,
 section {
   padding: 75px 0px;
-}
-
-header {
-  padding-top: 0px;
 }
 
 .wrapper {
@@ -719,12 +714,9 @@ nav {
           transform: rotate(2deg);
 }
 
-.home {
-  margin-top: 60px;
-  height: 100vh;
-}
-
 .landing {
+  margin-top: 75px;
+  height: calc(100vh - 75px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,11 +731,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: calc(100% - 101px);
-}
-
-.headerContainer {
-  height: 100%;
 }
 
 h1 {
@@ -1463,13 +1450,8 @@ footer {
   }
 }
 @media (max-width: 800px) {
-  header,
-section {
+  section {
     padding: 50px 0px;
-  }
-
-  header {
-    padding-top: 0px;
   }
 
   .leftNav {
@@ -1647,13 +1629,8 @@ section {
   }
 }
 @media (max-width: 525px) {
-  header,
-section {
+  section {
     padding: 25px 0px;
-  }
-
-  header {
-    padding-top: 0px;
   }
 
   .landing {

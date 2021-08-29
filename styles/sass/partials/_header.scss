@@ -271,22 +271,14 @@ nav {
 // Landing styles
 // **********************************************
 
-.home {
-  margin-top: 60px;
-  height: 100vh;
-}
-
 .landing {
+  margin-top: 75px;
+  height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: calc(100% - 101px);
-}
-
-.headerContainer {
-  height: 100%;
 }
 
 // Landing text
