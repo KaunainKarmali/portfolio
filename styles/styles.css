@@ -366,7 +366,7 @@ section {
   background-color: transparent;
   border-color: #faf9f9;
 }
-.primaryBtn:hover, .primaryBtn:focus {
+.primaryBtn:hover, .primaryBtn:focus-visible {
   color: #555b6e;
   background-color: rgba(250, 249, 249, 0.8);
 }
@@ -376,7 +376,7 @@ section {
   background-color: #bee3db;
   border-color: #bee3db;
 }
-.secondaryBtn:hover, .secondaryBtn:focus, .secondaryBtn:active {
+.secondaryBtn:hover, .secondaryBtn:focus-visible {
   color: white;
   background-color: #89b0ae;
   border-color: #89b0ae;
@@ -409,7 +409,7 @@ section {
   padding: 20px;
   font-size: 2rem;
 }
-.skipLink:focus {
+.skipLink:focus-visible {
   left: 0;
   outline: none;
 }
@@ -634,12 +634,12 @@ nav {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.closeMenuBtn:hover > .closeMenuIcon, .closeMenuBtn:focus > .closeMenuIcon {
+.closeMenuBtn:hover > .closeMenuIcon, .closeMenuBtn:focus-visible > .closeMenuIcon {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ff6767;
 }
-.closeMenuBtn:hover, .closeMenuBtn:focus {
+.closeMenuBtn:hover, .closeMenuBtn:focus-visible {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -682,10 +682,10 @@ nav {
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
-.navLink:hover::after, .navLink:focus::after, .navLink:active::after {
+.navLink:hover::after, .navLink:focus-visible::after {
   width: calc(100% - 15px * 2);
 }
-.navLink:focus {
+.navLink:focus-visible {
   outline: none;
 }
 
@@ -1127,7 +1127,7 @@ h3 {
 }
 
 .planItContainer {
-  background: #1eae98;
+  background: #168376;
 }
 
 .showMakContainer {
@@ -1276,7 +1276,7 @@ h3 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.largeContactLink:hover, .largeContactLink:active, .largeContactLink:focus {
+.largeContactLink:hover, .largeContactLink:focus-visible {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   outline: none;
@@ -1341,7 +1341,7 @@ h3 {
 
 .contactInput {
   background-color: #89b0ae;
-  color: white;
+  color: black;
   border: 1px solid #89b0ae;
   padding: 13px;
   font-size: 1rem;
@@ -1351,23 +1351,23 @@ h3 {
   font-weight: 700;
 }
 .contactInput::-webkit-input-placeholder {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 .contactInput::-moz-placeholder {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 .contactInput:-ms-input-placeholder {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 .contactInput::-ms-input-placeholder {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 .contactInput::placeholder {
-  color: white;
+  color: black;
   font-weight: 700;
 }
 .contactInput:hover {
@@ -1375,7 +1375,7 @@ h3 {
   padding: calc(13px - 1px);
   border-color: #555b6e;
 }
-.contactInput:focus, .contactInput:active {
+.contactInput:focus-visible {
   outline: 0;
   border-width: 2px;
   padding: calc(13px - 1px);
@@ -1486,10 +1486,10 @@ footer {
     margin: 5px;
     border-radius: 5px;
   }
-  .navLink:hover, .navLink:focus {
+  .navLink:hover, .navLink:focus-visible {
     background-color: #ffd6ba;
   }
-  .navLink:hover::after, .navLink:focus::after, .navLink:active::after {
+  .navLink:hover::after, .navLink:focus-visible::after {
     width: 0%;
   }
 
@@ -1500,7 +1500,7 @@ footer {
     background-color: #89b0ae !important;
     color: #555b6e !important;
   }
-  .open .navLink:hover, .open .navLink:focus, .open .navLink:focus-within, .open .navLink:active {
+  .open .navLink:hover, .open .navLink:focus-visible, .open .navLink:focus-within {
     background-color: #ffd6ba !important;
   }
 
