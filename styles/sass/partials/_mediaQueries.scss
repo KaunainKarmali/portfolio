@@ -81,13 +81,12 @@
     border-radius: 5px;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       background-color: $primary;
     }
 
     &:hover::after,
-    &:focus::after,
-    &:active::after {
+    &:focus-visible::after {
       width: 0%;
     }
   }
@@ -101,9 +100,8 @@
       color: $secondary !important;
 
       &:hover,
-      &:focus,
-      &:focus-within,
-      &:active {
+      &:focus-visible,
+      &:focus-within {
         background-color: $primary !important;
       }
     }

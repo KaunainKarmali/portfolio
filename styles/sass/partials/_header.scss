@@ -187,13 +187,13 @@ nav {
   box-shadow: none;
 
   &:hover > .closeMenuIcon,
-  &:focus > .closeMenuIcon {
+  &:focus-visible > .closeMenuIcon {
     box-shadow: none;
     color: $red;
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     box-shadow: none;
   }
 }
@@ -237,12 +237,11 @@ nav {
   }
 
   &:hover::after,
-  &:focus::after,
-  &:active::after {
+  &:focus-visible::after {
     width: calc(100% - 15px * 2);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
   }
 }
