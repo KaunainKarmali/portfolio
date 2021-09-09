@@ -108,7 +108,7 @@ h3 {
 }
 
 .planItContainer {
-  background: rgb(30, 174, 152);
+  background: rgb(22, 131, 118);
 }
 
 .showMakContainer {
@@ -116,7 +116,7 @@ h3 {
 }
 
 .nbaCodeStarsContainer {
-  background: rgb(247, 56, 89);
+  background: rgb(235, 10, 47);
 }
 
 .gameContainer {
@@ -251,8 +251,7 @@ h3 {
   transition: all 0.3s ease-in-out;
 
   &:hover,
-  &:active,
-  &:focus {
+  &:focus-visible {
     transform: scale(1.2);
     outline: none;
   }
@@ -310,7 +309,7 @@ h3 {
 
 .contactInput {
   background-color: $coolGrey;
-  color: $white;
+  color: $black;
   border: 1px solid $coolGrey;
   padding: 13px;
   font-size: 1rem;
@@ -320,7 +319,7 @@ h3 {
   font-weight: 700;
 
   &::placeholder {
-    color: $white;
+    color: $black;
     font-weight: 700;
   }
 
@@ -330,8 +329,7 @@ h3 {
     border-color: $secondary;
   }
 
-  &:focus,
-  &:active {
+  &:focus-visible {
     outline: 0;
     border-width: 2px;
     padding: calc(13px - 1px);

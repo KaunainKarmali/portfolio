@@ -99,7 +99,7 @@ section {
   border-color: $offWhite;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: $secondary;
     background-color: rgba(250, 249, 249, 0.8);
   }
@@ -111,8 +111,7 @@ section {
   border-color: $coralSea;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus-visible {
     color: $white;
     background-color: $coolGrey;
     border-color: $coolGrey;
@@ -151,7 +150,7 @@ section {
   padding: 20px;
   font-size: 2rem;
 
-  &:focus {
+  &:focus-visible {
     left: 0;
     outline: none;
   }
